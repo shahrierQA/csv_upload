@@ -17,15 +17,16 @@ yarn dev
 ## Features
 
 - [x] CSV Upload
-  - [x] Can uplaod any CSV file
+  - [x] Can upload any CSV file
   - [x] Support only CSV file format
   - [x] Can DELETE a particular CSV file
 - [x] CSV Data Table
   - [x] Display all data for a CSV file in a table format
   - [x] Can UPDATE the specific field data in table
+  - [x] Can paginate the page
 
 ## Tech Stack
 
-- _Frontend:_ ReactJS, TailwindCSS, React Query
-- _Backend:_ NodeJS, ExpressJS
-- _Database:_ MongoDB
+- Frontend: ReactJS, TailwindCSS, React Query
+- Backend: NodeJS, ExpressJS
+- Database: MongoDB
