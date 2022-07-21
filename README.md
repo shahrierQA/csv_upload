@@ -2,13 +2,15 @@
 
 ## Installation
 
-### Steps
-
 Clone this repository on your system and install the packages for both client and server.
 
-And then from the root of your repository run
-
 ```bash
+git clone git@github.com:shahrierQA/csv_upload.git
+cd csv_upload
+yarn
+cd client
+yarn
+cd ..
 yarn dev
 ```
 
