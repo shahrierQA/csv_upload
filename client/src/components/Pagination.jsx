@@ -10,7 +10,7 @@ const Pagination = ({
   setCurrentPage,
 }) => {
   // define total pages
-  const totalPages = Math.ceil(itemCount / itemPerPage)
+  const totalPages = Math.ceil(itemCount / itemPerPage) || 1
 
   /**
    * Implement immediately goto page handler
