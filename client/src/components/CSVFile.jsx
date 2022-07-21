@@ -27,7 +27,11 @@ const CSVFile = () => {
       ) : (
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-1">
           {csvFiles.map(item => (
-            <Card key={item._id} fileName={item.csvFile} id={item._id} />
+            <Card
+              key={item._id}
+              fileName={item.originalFilename}
+              id={item._id}
+            />
           ))}
         </div>
       )}

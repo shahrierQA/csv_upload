@@ -7,6 +7,11 @@ const csvSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+
+    originalFilename: {
+      type: String,
+      required: true,
+    },
   },
   {
     timestamps: true,

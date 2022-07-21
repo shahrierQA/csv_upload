@@ -45,7 +45,10 @@ const createCSVFile = async (req, res) => {
     /**
      * Insert a new csv file into database
      */
-    const csvData = await CSV.create({ csvFile })
+    const csvData = await CSV.create({
+      csvFile,
+      originalFilename: req.file.originalname,
+    })
 
     res.status(200).json({
       status: "success",
