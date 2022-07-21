@@ -20,7 +20,9 @@ const Card = ({ fileName, id }) => {
   })
 
   const handleDelete = () => {
-    if (window.confirm("Are you sure you want to delete this file ?") == true) {
+    if (
+      window.confirm("Are you sure you want to delete this file ?") === true
+    ) {
       mutate(id)
     }
   }

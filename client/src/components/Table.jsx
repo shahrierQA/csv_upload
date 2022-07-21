@@ -15,7 +15,7 @@ const Table = ({ tableColumns, tableData, tableSorting, sortOrder }) => {
    * Implement Pagination
    */
   const [currentPage, setCurrentPage] = useState(1)
-  const itemPerPage = 5
+  const itemPerPage = 100
 
   // Get current page items
   const startIndex = (currentPage - 1) * itemPerPage
@@ -94,11 +94,11 @@ const Table = ({ tableColumns, tableData, tableSorting, sortOrder }) => {
                             setShow(true)
                           }}
                         >
-                          {show ? (
+                          {show && key !== "SL" ? (
                             <input
                               type="text"
                               defaultValue={value}
-                              className="w-full text-lg font-medium break-words max-w-[350px]"
+                              className="text-lg font-medium focus:border focus:border-blue-500 focus:outline-none break-all break-words w-[250px]"
                               onBlur={e => handleInputChange(e, ind, row, key)}
                               onKeyDown={e =>
                                 e.key === "Enter" &&

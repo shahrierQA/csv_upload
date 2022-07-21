@@ -33,7 +33,7 @@ table tbody tr {
   @apply text-gray-700;
 }
 table tbody tr td {
-  @apply relative text-lg font-medium truncate w-[250px] h-16;
+  @apply relative h-16 text-lg font-medium break-all break-words truncate w-[250px];
 }
 
 /* styles for pagination button  */
